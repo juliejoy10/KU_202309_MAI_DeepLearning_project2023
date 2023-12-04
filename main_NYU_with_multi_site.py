@@ -165,7 +165,7 @@ def main(seed, timestamp):
     print('Arguments: \n', args)
 
     data_folder = args.root_dir  # '\Data\
-    subject_ids = get_ids(data_folder)
+    # subject_ids = get_ids(data_folder) # TODO 주석처리함
     args.embCh = list(map(int, re.findall("\d+", str(args.embCh))))
 
     print(seed)
