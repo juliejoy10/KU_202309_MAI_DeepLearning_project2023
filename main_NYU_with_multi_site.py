@@ -146,9 +146,8 @@ def main(seed, timestamp):
     parser.add_argument('--lr', default=1e-5, type=float, help='learning rate')
     # parser.add_argument('--lr', default=5e-6, type=float, help='learning rate') #TODO lr 변경함
     parser.add_argument('--weight_decay', default=1e-2, type=float, help='weight decay')
-    # parser.add_argument('--batch_size', default=16, type=int, help='batch size')
-    parser.add_argument('--batch_size', default=64, type=int, help='batch size')
-    parser.add_argument('--num_epochs', default=1000, type=int, help='num_epochs')
+    parser.add_argument('--batch_size', default=16, type=int, help='batch size')
+    parser.add_argument('--num_epochs', default=200, type=int, help='num_epochs')
     parser.add_argument('--optim', default="Adam", type=str, help='optimizer')
     parser.add_argument('--betas', default=(0.5, 0.9), type=tuple, help='adam betas')
     parser.add_argument("--momentum", default=0.9, type=float, help="optimizer momentum - SGD, MADGRAD")
