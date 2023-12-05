@@ -77,7 +77,7 @@ def test(model, criterion, test_loader):
 
 def trainer(args, seed, train_x, test_x, train_y, test_y):
 
-    model = ChebyNet(args).to(args.device)  #  GAT, GCN, ChebyNet
+    model = GAT(args,8,8,1).to(args.device)  #  GAT, GCN, ChebyNet
 
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay, betas=args.betas)
